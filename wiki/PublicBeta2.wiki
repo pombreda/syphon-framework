@@ -1,0 +1,17 @@
+#summary Syphon.framework Public Beta 2
+
+== Introduction ==
+
+Public Beta 2 improves server discovery and removal, allows a server access to its own output, and includes fixes for some minor issues.
+
+=== Changes ===
+
+  * Improve removal of servers if a remote application with servers hangs or crashes (r4)
+  * Fix a potential lock conflict when stopping clients (r8, r11)
+  * Add - newFrameImage method to !SyphonServer, allowing access by a server to its own output (r10)
+  * Fix issue where one frame of garbage was sometimes sent to its first client if a server used - hasClients to conditionally draw (r26)
+  * Fix issue which affected publishing a GL_TEXTURE_2D texture with no mipmaps (r27)
+  * Make the Syphon icon available for use by applications (r29)
+  * Fix issue which delayed server discovery in some versions of MacOS X (r30, r37)
+  * If an application fails to stop servers programmatically, they are stopped by the framework when the application quits (r45)
+  * Code cleanup (r6, r7, r9, r12, r28, r40, 42) 
