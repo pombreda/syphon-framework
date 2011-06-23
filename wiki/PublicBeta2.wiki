@@ -14,4 +14,4 @@ Public Beta 2 improves server discovery and removal, allows a server access to i
   * Make the Syphon icon available for use by applications (r29)
   * Fix issue which delayed server discovery in some versions of MacOS X (r30, r37)
   * If an application fails to stop servers programmatically, they are stopped by the framework when the application quits (r45)
-  * Code cleanup (r6, r7, r9, r12, r28, r40, 42) 
+  * Code cleanup (r6, r7, r9, r12, r28, r40, r42) 
