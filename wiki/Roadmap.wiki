@@ -1,0 +1,21 @@
+#summary Roadmap for future Syphon releases.
+
+= Introduction =
+
+  * Merge Garagecube Private Branch with Float Texture Support branch.
+  * Finish Float Texture Support
+  * OpenGL 3.2 Support. 
+  * Handle Application Sandboxing / IPC issues. 
+  * Network support.
+
+= Details =
+
+  * Merge Garagecube Private Branch (MSAA, Depth Buffer, Stencil Buffer) with Float Texture Support branch. See issue 13: http://code.google.com/p/syphon-framework/issues/detail?id=13 
+   
+  * Finish Float Texture Support - need to explore compatibility, especially for situations where multiple GPUs are involved. This is similar to the MSAA case above.
+
+  * OpenGL 3.2 Support. Look at work done by "Zero Stride" : http://v002.info/forums/topic/opengl-3-2-context-causes-glitches/ - Explore bliting methods which may be faster than rendering into an FBO. Personally, would like to avoid having to render via shaders, and all of the state setup. Blitting might be the best case for this?
+
+  * Handle Application Sandboxing / IPC issues. Possible workarounds for Announcement / Discovery via Bonjour/Rendezvous - See issue 20: http://code.google.com/p/syphon-framework/issues/detail?id=20
+
+  * Network support. Currently functional in private branch. Need to optimize. I think goal should be 1080p at 30. Can do this now with clean, graphic images, but not with noisy images. Look into Airplay and hardware accelerated h.264 encoding? Latency concerns? Other lossless codecs like UTVC? How do we handle the above float image support in that case? Only 32bpp / 8bpc ?
