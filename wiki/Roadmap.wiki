@@ -14,7 +14,7 @@
    
   * Finish Float Texture Support - need to explore compatibility, especially for situations where multiple GPUs are involved. This is similar to the MSAA case above. issue 13
 
-  * OpenGL 3.2 Support.
+  * OpenGL 3.2 Support. issue 22
 
   * Handle Application Sandboxing / IPC issues. Possible workarounds for Announcement / Discovery via Bonjour/Rendezvous - See issue 20
 
